@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Hash-committed artifacts: git must NEVER rewrite these bytes (line-ending
+# normalization would break sha256 verification against COMMITMENTS.md)
+revealed/** -text

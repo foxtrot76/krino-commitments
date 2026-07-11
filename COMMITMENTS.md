@@ -25,3 +25,11 @@ Rule: entries are **only appended**, never edited or removed. The git history is
 
 ---
 *Next entries: each weekly issue's markdown source hash, appended and pushed **before** the issue publishes.*
+
+## 2026-07-11 — Issue No. 001 (first weekly report)
+
+- **Weekly report No.001 — source** (renderer instance, CONTENT-filled; the committed artifact) — revealed at `revealed/KRINO_ISSUE_001_SOURCE.py`
+  `c8546c03aa034d23bd9deab8df210029d45d77c275d1c75e9c52e95a2e924d86`
+
+- **Weekly report No.001 — rendered PDF** (reader copy; PDF rebuilds are not byte-stable by design — the source hash above is the commitment) — `revealed/KRINO_WEEKLY_No001.pdf`
+  `144b6170aa15cf8c353b44edd758b6642a8eacda156eb40fee4715bb6297dac6`

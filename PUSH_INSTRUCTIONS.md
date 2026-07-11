@@ -1,19 +1,20 @@
-# Pushing krino-commitments to GitHub (operator action)
+# Standing publish workflow (adopted 2026-07-11)
 
-This folder is ready to become the public commitment repo. Claude cannot create the repo or push for you — you do:
+Each issue: upload the "KRINO commitments" folder to the session → Claude returns a zip
+mirroring the repo layout with ONLY new/changed files → extract INTO the krino-commitments
+folder (merge/overwrite — NEVER delete the folder itself: .git lives there and holds the
+tamper-evidence history) → then:
 
-1. Create a new **public** repo on GitHub named `krino-commitments` (empty — do not add a README; this folder has one).
-2. In this folder, run:
-   ```
-   git init
-   git add .
-   git commit -m "Founding pre-registration 2026-07-06 (Y1 v15, Success Scorer v1.0)"
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/krino-commitments.git
-   git push -u origin main
-   ```
-3. The push timestamp (git history + GitHub) is the tamper-evidence. Thereafter, each issue's source hash is
-   appended to `COMMITMENTS.md` and pushed **before** the issue publishes.
+    git add -A
+    git commit -m "REPORT-NNN: commit + reveal"
+    git push
 
-Keep the internal briefing and trackers **private** — only their hashes belong here. This repo holds the
-methodology, the scorer, and the hash log; never the raw internal working data.
+One push per issue is sufficient while the repo is the publication venue (the push timestamp
+proves the artifact existed then). If an external channel (e.g. Substack) goes live, the
+two-step returns: push the COMMITMENTS.md entry FIRST, publish externally SECOND.
+
+Verify any revealed artifact anytime:
+    certutil -hashfile revealed\<file> SHA256   (Windows)
+and compare to its line in COMMITMENTS.md.
+
+Keep internal briefings/trackers private — only hashes belong here.
