@@ -41,3 +41,11 @@ Rule: entries are **only appended**, never edited or removed. The git history is
 
 - **Weekly report No.002 — rendered PDF** (reader copy; PDF rebuilds are not byte-stable by design — the source hash above is the commitment) — `revealed/KRINO_WEEKLY_No002.pdf`
   `bf3a17151e9e3922a29329f6ed6adde9c0fe3a802b5a47520b6f868c8fb9bd8f`
+
+## 2026-07-25 — Issue No. 003
+
+- **Weekly report No.003 — source** (renderer instance, CONTENT-filled; the committed artifact) — revealed at `revealed/KRINO_ISSUE_003_SOURCE.py`
+  `3ef6ff13608bcdcd13c1ab1953d6a09f5a0abed0928de1f752e43a5b88b65b8d`
+
+- **Weekly report No.003 — rendered PDF** (reader copy; PDF rebuilds are not byte-stable by design — the source hash above is the commitment) — `revealed/KRINO_WEEKLY_No003.pdf`
+  `c283d9910fde15a6e392bbe86ad73d44ca536e3c827ae3a350ad5565c8efba42`
